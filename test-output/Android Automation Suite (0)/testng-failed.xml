@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Android Automation Suite (0)]">
+  <test thread-count="1" name="Flutter Customer App Automation(failed)">
+    <classes>
+      <class name="com.example.restassuredproject.testClasses.TestClassForSignUp">
+        <methods>
+          <include name="testSignUpPage"/>
+        </methods>
+      </class> <!-- com.example.restassuredproject.testClasses.TestClassForSignUp -->
+    </classes>
+  </test> <!-- Flutter Customer App Automation(failed) -->
+</suite> <!-- Failed suite [Android Automation Suite (0)] -->
