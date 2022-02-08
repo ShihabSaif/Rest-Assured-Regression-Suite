@@ -1,14 +1,10 @@
 package com.example.restassuredproject.utility;
-
-import com.sun.javafx.util.Utils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.ResourceUtils;
 
 import java.io.*;
 import java.net.URL;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 public class UTIL {
 
