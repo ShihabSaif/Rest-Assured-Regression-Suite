@@ -25,7 +25,7 @@ pipeline {
                 }
 
                 failure {
-                                    mail cc: "${env.EMAIL_AFTER_SUCCESSFUL_BUILD_TUSI_FAILED}", body: "<b></b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Build URL: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "shariba@surecash.net";
+                                    mail bcc: "${env.EMAIL_AFTER_SUCCESSFUL_BUILD_TUSI_FAILED}", body: "<b></b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Build URL: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "shariba@surecash.net";
                          }
 
             }
