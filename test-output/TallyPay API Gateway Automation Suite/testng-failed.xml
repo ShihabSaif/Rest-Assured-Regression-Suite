@@ -3,36 +3,16 @@
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TallyPay API Gateway Automation Suite]">
   <test thread-count="1" name="TallyPay API Gateway Automation Suite(failed)">
     <classes>
-      <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload">
-        <methods>
-          <include name="testNIDFrontUplodad"/>
-        </methods>
-      </class> <!-- com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload -->
-      <class name="com.example.restassuredproject.testClasses.TestClassForSignUp">
-        <methods>
-          <include name="testSignUpPage"/>
-        </methods>
-      </class> <!-- com.example.restassuredproject.testClasses.TestClassForSignUp -->
-      <class name="com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp">
-        <methods>
-          <include name="getOTPForSignUpTest"/>
-        </methods>
-      </class> <!-- com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp -->
       <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear">
         <methods>
           <include name="testNIDClear"/>
         </methods>
       </class> <!-- com.example.restassuredproject.testClasses.TestCaseForNIDClear -->
-      <class name="com.example.restassuredproject.testClasses.TestCaseForOTPValidation">
+      <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload">
         <methods>
-          <include name="testOTPValidation"/>
+          <include name="testNIDFrontUplodad"/>
         </methods>
-      </class> <!-- com.example.restassuredproject.testClasses.TestCaseForOTPValidation -->
-      <class name="com.example.restassuredproject.testClasses.TestClassForCreateWallet">
-        <methods>
-          <include name="testCreateWallet"/>
-        </methods>
-      </class> <!-- com.example.restassuredproject.testClasses.TestClassForCreateWallet -->
+      </class> <!-- com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload -->
     </classes>
   </test> <!-- TallyPay API Gateway Automation Suite(failed) -->
 </suite> <!-- Failed suite [TallyPay API Gateway Automation Suite] -->

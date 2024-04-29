@@ -1,5 +1,6 @@
 package com.example.restassuredproject.features;
 
+import com.example.restassuredproject.DTO.NIDBackUploadBodyParams;
 import com.example.restassuredproject.DTO.NIDFrontUploadBodyParams;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestClassForSignUp;
@@ -11,17 +12,17 @@ import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
 
-public class NIDFrontUpload {
+public class NIDBackUpload {
 
-    public Response nidFrontUpload(User user) throws IOException {
+    public Response nidBackUpload() throws IOException {
         RestAssured.baseURI= APIPath.hostURLMain;
 
         //json body parse
-        NIDFrontUploadBodyParams nidFrontUploadBodyParams=new NIDFrontUploadBodyParams();
+        NIDBackUploadBodyParams nidFrontUploadBodyParams=new NIDBackUploadBodyParams();
         nidFrontUploadBodyParams.setNidNo(nidFrontUploadBodyParams.getNidNo());
         nidFrontUploadBodyParams.setNidType(nidFrontUploadBodyParams.getNidType());
         nidFrontUploadBodyParams.setRequestId(nidFrontUploadBodyParams.getRequestId());
-        nidFrontUploadBodyParams.setPhotoFrontSide(nidFrontUploadBodyParams.getPhotoFrontSide());
+        nidFrontUploadBodyParams.setPhotoBackSide(nidFrontUploadBodyParams.getPhotoBackSide());
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestClassForSignUp.token);
@@ -32,7 +33,7 @@ public class NIDFrontUpload {
                 .when()
                 .body(nidFrontUploadBodyParams)
                 .header("Content-Type", "application/json")
-                .post("/api/v1/user/doc/nid-front").prettyPeek().then().extract().response();
+                .post("/api/v1/user/doc/nid-back").prettyPeek().then().extract().response();
 
 
         return response;

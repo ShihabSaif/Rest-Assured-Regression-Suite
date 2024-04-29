@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite">
-              <span class="suite-name border-passed">TallyPay API Gateway Automation Suite</span>
+              <span class="suite-name border-failed">TallyPay API Gateway Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TallyPay_API_Gateway_Automation_Suite">
-                    <span>E:\Tusi\F\NP_project\rest-assured-project\testng.xml</span>
+                    <span>D:\H\git_project\NP_project\spring-rest-assured-api-gw\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" class="hide-methods failed suite-TallyPay_API_Gateway_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-TallyPay_API_Gateway_Automation_Suite -->
+                      <a href="#" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" class="show-methods failed suite-TallyPay_API_Gateway_Automation_Suite"> (show)</a> <!-- show-methods failed suite-TallyPay_API_Gateway_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-TallyPay_API_Gateway_Automation_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForNIDClear" hash-for-method="testNIDClear">testNIDClear</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload" hash-for-method="testNIDFrontUplodad">testNIDFrontUplodad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TallyPay_API_Gateway_Automation_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +121,7 @@
                     <div class="method-list-content passed suite-TallyPay_API_Gateway_Automation_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp" hash-for-method="getOTPForSignUpTest">getOTPForSignUpTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestClassForCreateWallet" hash-for-method="testCreateWallet">testCreateWallet</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForNIDClear" hash-for-method="testNIDClear">testNIDClear</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload" hash-for-method="testNIDFrontUplodad">testNIDFrontUplodad</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestCaseForOTPValidation" hash-for-method="testOTPValidation">testOTPValidation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TallyPay_API_Gateway_Automation_Suite" title="com.example.restassuredproject.testClasses.TestClassForLookUpWallet" hash-for-method="testCreateWallet">testCreateWallet</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,39 +141,107 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TallyPay_API_Gateway_Automation_Suite" class="panel TallyPay_API_Gateway_Automation_Suite">
-          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
+          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.example.restassuredproject.testClasses.TestCaseForNIDClear</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getOTPForSignUpTest">
-                  </a> <!-- getOTPForSignUpTest -->
-                  <span class="method-name">getOTPForSignUpTest</span>
+                  <a name="testNIDClear">
+                  </a> <!-- testNIDClear -->
+                  <span class="method-name">testNIDClear</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.example.restassuredproject.features.NIDClear.nidClear(NIDClear.java:36)
+	at com.example.restassuredproject.testClasses.TestCaseForNIDClear.testNIDClear(TestCaseForNIDClear.java:29)
+	at com.example.restassuredproject.RestAssuredProjectApplication.main(RestAssuredProjectApplication.java:98)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-passed -->
-          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
+          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-failed -->
+          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.restassuredproject.testClasses.TestCaseForOTPValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testOTPValidation">
-                  </a> <!-- testOTPValidation -->
-                  <span class="method-name">testOTPValidation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-passed -->
-          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,6 +250,43 @@
                   <a name="testNIDFrontUplodad">
                   </a> <!-- testNIDFrontUplodad -->
                   <span class="method-name">testNIDFrontUplodad</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload.testNIDFrontUplodad(TestCaseForNIDFrontUpload.java:68)
+	at com.example.restassuredproject.RestAssuredProjectApplication.main(RestAssuredProjectApplication.java:98)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-failed -->
+          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.restassuredproject.testClasses.TestClassForLookUpWallet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateWallet">
+                  </a> <!-- testCreateWallet -->
+                  <span class="method-name">testCreateWallet</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,40 +306,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-passed -->
-          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.restassuredproject.testClasses.TestClassForCreateWallet</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateWallet">
-                  </a> <!-- testCreateWallet -->
-                  <span class="method-name">testCreateWallet</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-passed -->
-          <div class="suite-TallyPay_API_Gateway_Automation_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.restassuredproject.testClasses.TestCaseForNIDClear</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testNIDClear">
-                  </a> <!-- testNIDClear -->
-                  <span class="method-name">testNIDClear</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TallyPay_API_Gateway_Automation_Suite-class-passed -->
         </div> <!-- panel TallyPay_API_Gateway_Automation_Suite -->
         <div panel-name="test-xml-TallyPay_API_Gateway_Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Tusi\F\NP_project\rest-assured-project\testng.xml</span>
+            <span class="header-content">D:\H\git_project\NP_project\spring-rest-assured-api-gw\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -244,10 +318,8 @@
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TallyPay API Gateway Automation Suite&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;TallyPay API Gateway Automation Suite&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.example.restassuredproject.testClasses.TestClassForLookUpWallet&quot;/&gt;
       &lt;class name=&quot;com.example.restassuredproject.testClasses.TestClassForSignUp&quot;/&gt;
-      &lt;class name=&quot;com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp&quot;/&gt;
-      &lt;class name=&quot;com.example.restassuredproject.testClasses.TestCaseForOTPValidation&quot;/&gt;
-      &lt;class name=&quot;com.example.restassuredproject.testClasses.TestClassForCreateWallet&quot;/&gt;
       &lt;class name=&quot;com.example.restassuredproject.testClasses.TestCaseForNIDClear&quot;/&gt;
       &lt;class name=&quot;com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload&quot;/&gt;
     &lt;/classes&gt;
@@ -263,7 +335,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TallyPay API Gateway Automation Suite (6 classes)</span>
+                <span class="test-name">TallyPay API Gateway Automation Suite (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,36 +361,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testNIDFrontUplodad')
-data.setCell(0, 2, 'com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload')
-data.setCell(0, 3, 8025);
+data.setCell(0, 1, 'testNIDClear')
+data.setCell(0, 2, 'com.example.restassuredproject.testClasses.TestCaseForNIDClear')
+data.setCell(0, 3, 21060);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSignUpPage')
-data.setCell(1, 2, 'com.example.restassuredproject.testClasses.TestClassForSignUp')
-data.setCell(1, 3, 2321);
+data.setCell(1, 1, 'testNIDFrontUplodad')
+data.setCell(1, 2, 'com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload')
+data.setCell(1, 3, 2632);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCreateWallet')
-data.setCell(2, 2, 'com.example.restassuredproject.testClasses.TestClassForCreateWallet')
-data.setCell(2, 3, 685);
+data.setCell(2, 2, 'com.example.restassuredproject.testClasses.TestClassForLookUpWallet')
+data.setCell(2, 3, 2570);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getOTPForSignUpTest')
-data.setCell(3, 2, 'com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp')
-data.setCell(3, 3, 127);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testOTPValidation')
-data.setCell(4, 2, 'com.example.restassuredproject.testClasses.TestCaseForOTPValidation')
-data.setCell(4, 3, 108);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testNIDClear')
-data.setCell(5, 2, 'com.example.restassuredproject.testClasses.TestCaseForNIDClear')
-data.setCell(5, 3, 63);
+data.setCell(3, 1, 'testSignUpPage')
+data.setCell(3, 2, 'com.example.restassuredproject.testClasses.TestClassForSignUp')
+data.setCell(3, 3, 1462);
 window.suiteTableData['TallyPay_API_Gateway_Automation_Suite']= { tableData: data, tableDiv: 'times-div-TallyPay_API_Gateway_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-TallyPay_API_Gateway_Automation_Suite">
               </div> <!-- times-div-TallyPay_API_Gateway_Automation_Suite -->
             </div> <!-- times-div -->
@@ -344,45 +408,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestClassForSignUp</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestClassForLookUpWallet</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testSignUpPage</span>
+                <span class="method-name">testCreateWallet</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestClassForSignUp</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getOTPForSignUpTest</span>
-                <span class="method-start">2322 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestCaseForOTPValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testOTPValidation</span>
-                <span class="method-start">2449 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestClassForCreateWallet</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testCreateWallet</span>
-                <span class="method-start">2557 ms</span>
+                <span class="method-name">testSignUpPage</span>
+                <span class="method-start">2572 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestCaseForNIDClear</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testNIDClear</span>
-                <span class="method-start">3242 ms</span>
+                <span class="method-start">4034 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testNIDFrontUplodad</span>
-                <span class="method-start">3305 ms</span>
+                <span class="method-start">25095 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

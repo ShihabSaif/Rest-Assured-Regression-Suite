@@ -2,33 +2,28 @@ package com.example.restassuredproject.DTO;
 
 import com.example.restassuredproject.utility.UTIL;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.apache.commons.io.FileUtils;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Base64;
 import java.util.Properties;
 
+import static com.example.restassuredproject.DTO.NIDFrontUploadBodyParams.reqID;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class NIDFrontUploadBodyParams {
+public class NIDBackUploadBodyParams {
 
     private String nidNo;
     private String nidType;
     private String requestId;
-    private  String photoFrontSide;
+    private  String photoBackSide;
 
     //Read data from property file
     UTIL util=new UTIL();
     Properties prop = util.readPropData();
     String nid_no_prop= prop.getProperty("nid_no_prop");
     String nid_type_prop= prop.getProperty("nid_type_prop");
-    String nid_pic_prop= prop.getProperty("nid_pic_prop");
-    public static final String reqID = UTIL.generateRandomRequestId();
+    String nid_pic_prop= prop.getProperty("photoBackSide");
 
-    byte[] fileContent = FileUtils.readFileToByteArray(new File("nid_front.jpg"));
-    String encodedString = Base64.getEncoder().encodeToString(fileContent);
-
-    public NIDFrontUploadBodyParams() throws IOException {
+    public NIDBackUploadBodyParams() throws IOException {
     }
 
 
@@ -56,12 +51,12 @@ public class NIDFrontUploadBodyParams {
         this.requestId = reqID;
     }
 
-    public String getPhotoFrontSide() {
-        return photoFrontSide;
+    public String getPhotoBackSide() {
+        return photoBackSide;
     }
 
-    public void setPhotoFrontSide(String photoFrontSide) {
-        this.photoFrontSide = encodedString;
+    public void setPhotoBackSide(String photoFrontSide) {
+        this.photoBackSide = nid_pic_prop;
     }
 
 

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 5,alwaysRun = true, enabled = true)
+@Test(priority = 2,alwaysRun = true, enabled = true)
 public class TestCaseForNIDClear {
     public static User user = new User();
     public static NIDClear nidClear=new NIDClear();

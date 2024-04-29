@@ -8,7 +8,7 @@ import java.util.Properties;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class SignUpBodyParams {
+public class SignUpAttemptBodyParams {
     private String name;
     private String mobile_number;
     private String device_type;
@@ -25,7 +25,7 @@ public class SignUpBodyParams {
     String name_prop= prop.getProperty("name_prop");
     String deviceType= prop.getProperty("deviceType");
 
-    public SignUpBodyParams() throws IOException {
+    public SignUpAttemptBodyParams() throws IOException {
     }
 
     public String getName() {
