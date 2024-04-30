@@ -11,6 +11,7 @@
             <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>
             <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>
+            <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>
         </classes>
     </test>
 </suite>
