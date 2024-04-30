@@ -17,6 +17,7 @@ public class ConfirmNID {
         confirmNIDInfoParams.setSpouseName(confirmNIDInfoParams.getSpouseName());
         confirmNIDInfoParams.setNidNo(confirmNIDInfoParams.getNidNo());
         confirmNIDInfoParams.setAddressPermanent(confirmNIDInfoParams.getAddressPermanent());
+        confirmNIDInfoParams.setAddressPresent(confirmNIDInfoParams.getAddressPresent());
         confirmNIDInfoParams.setBirthday(confirmNIDInfoParams.getBirthday());
         confirmNIDInfoParams.setBloodGroup(confirmNIDInfoParams.getBloodGroup());
         confirmNIDInfoParams.setCustomerNameBn(confirmNIDInfoParams.getCustomerNameBn());

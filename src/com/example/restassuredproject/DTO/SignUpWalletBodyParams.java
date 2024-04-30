@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.IOException;
 import java.util.Properties;
 
+import static com.example.restassuredproject.DTO.SignUpAttemptBodyParams.phnNumber;
 import static com.example.restassuredproject.DTO.WalletLookUpBodyParams.*;
 
 

@@ -4,10 +4,13 @@
     <test name="TallyPay API Gateway Automation Suite">
 
         <classes>
-            <class name="com.example.restassuredproject.testClasses.TestClassForLookUpWallet"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestClassForLookUpWallet"/>-->
             <class name="com.example.restassuredproject.testClasses.TestClassForSignUp"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear"/>-->
             <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload"/>
+            <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>
+            <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>
+            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>
         </classes>
     </test>
 </suite>

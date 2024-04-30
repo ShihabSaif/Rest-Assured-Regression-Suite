@@ -5,12 +5,10 @@
 
         <classes>
             <class name="com.example.restassuredproject.testClasses.TestClassForSignUp"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseForGetOTPForSignUp"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseForOTPValidation"/>
-            <class name="com.example.restassuredproject.testClasses.TestClassForCreateWallet"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear"/>-->
             <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload"/>
-
+            <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>
+            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>
         </classes>
     </test>
 </suite>

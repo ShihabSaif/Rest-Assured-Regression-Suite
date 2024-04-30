@@ -1,13 +1,10 @@
 package com.example.restassuredproject.testClasses;
 
 import com.example.restassuredproject.features.NIDBackUpload;
-import com.example.restassuredproject.features.NIDFrontUpload;
-import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -25,7 +22,7 @@ public class TestCaseFoNIDBackUpload {
     public TestCaseFoNIDBackUpload() throws IOException {
     }
 
-    public void testNIDFrontUplodad() throws IOException {
+    public void testNIDBackUplodad() throws IOException {
         Response response=nidBackUpload.nidBackUpload();
         JsonPath jsonPathEvaluator = response.jsonPath();
         ResponseBody body = response.getBody();

@@ -14,14 +14,24 @@ public class SignUpAttemptBodyParams {
     private String device_type;
     private String uuid;
     private String device_id;
-    public static final String phnNumber = UTIL.generateRandomMobileNumber();
+//    public static final String phnNumber = UTIL.generateRandomMobileNumber();
     public static final String uuid1 = UTIL.generateRandomUUID();
     public static final String deeviceID = UTIL.generateRandomDeviceUD();
 
 
     //Read data from property file
-    UTIL util=new UTIL();
-    Properties prop = util.readPropData();
+    static UTIL util=new UTIL();
+    static Properties prop;
+
+    static {
+        try {
+            prop = util.readPropData();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static final String phnNumber = prop.getProperty("phn_number");
     String name_prop= prop.getProperty("name_prop");
     String deviceType= prop.getProperty("deviceType");
 

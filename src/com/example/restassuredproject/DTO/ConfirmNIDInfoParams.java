@@ -11,6 +11,7 @@ public class ConfirmNIDInfoParams {
     private String nidNo;
     private String gender;
     private String addressPermanent;
+    private String addressPresent;
     private String birthday;
     private String fatherName;
     private String motherName;
@@ -115,6 +116,11 @@ public class ConfirmNIDInfoParams {
         this.monthlyIncome = monthlyIncome1;
     }
 
+    public String getAddressPresent() {
+        return addressPresent;
+    }
 
-
+    public void setAddressPresent(String addressPresent) {
+        this.addressPresent = addressPresent1;
+    }
 }

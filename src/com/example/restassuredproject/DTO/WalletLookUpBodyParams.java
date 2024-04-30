@@ -11,7 +11,6 @@ public class WalletLookUpBodyParams {
     private String device_id;
     private String device_type;
     private String mobile_number;
-    public static final String phnNumber = UTIL.generateRandomMobileNumber();
     public static final String uuid1 = UTIL.generateRandomUUID();
     public static final String deeviceID = UTIL.generateRandomDeviceUD();
 
@@ -19,6 +18,7 @@ public class WalletLookUpBodyParams {
     //Read data from property file
     UTIL util=new UTIL();
     Properties prop = util.readPropData();
+    String phnNumber = prop.getProperty("phn_number");
     String name_prop= prop.getProperty("name_prop");
     String pin_prop= prop.getProperty("pin_prop");
     String role_prop= prop.getProperty("role_prop");

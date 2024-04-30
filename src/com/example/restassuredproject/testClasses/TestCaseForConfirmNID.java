@@ -1,5 +1,7 @@
 package com.example.restassuredproject.testClasses;
 
+import com.example.restassuredproject.DTO.ConfirmNIDInfoParams;
+import com.example.restassuredproject.features.ConfirmNID;
 import com.example.restassuredproject.features.NIDBackUpload;
 import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
@@ -12,9 +14,8 @@ import java.util.Properties;
 
 @Test(priority = 3,alwaysRun = true, enabled = true)
 public class TestCaseForConfirmNID {
-
-
     public static NIDBackUpload nidBackUpload=new NIDBackUpload();
+    public static ConfirmNID confirmNID = new ConfirmNID();
     UTIL util = new UTIL();
     Properties prop = util.readPropData();
     String ec_eng_name_prop= prop.getProperty("ec_eng_name_prop");
@@ -22,8 +23,8 @@ public class TestCaseForConfirmNID {
     public TestCaseForConfirmNID() throws IOException {
     }
 
-    public void testNIDFrontUplodad() throws IOException {
-        Response response=nidBackUpload.nidBackUpload();
+    public void testConfirmNID() throws IOException {
+        Response response=confirmNID.confirmNIDResponse();
         JsonPath jsonPathEvaluator = response.jsonPath();
         ResponseBody body = response.getBody();
         String bodyAsString = body.asString();
