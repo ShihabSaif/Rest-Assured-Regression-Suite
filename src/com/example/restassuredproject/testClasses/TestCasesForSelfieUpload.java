@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 4,alwaysRun = true, enabled = true)
+@Test(priority = 6,alwaysRun = true, enabled = true)
 public class TestCasesForSelfieUpload {
     public static User user = new User();
     public static SelfieUpload selfieUpload = new SelfieUpload();

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 5,alwaysRun = true, enabled = true)
+@Test(priority = 7,alwaysRun = true, enabled = true)
 public class TestAttachBank {
     public static AttachBank attachBank = new AttachBank();
     UTIL util = new UTIL();

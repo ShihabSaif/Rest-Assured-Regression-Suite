@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 3,alwaysRun = true, enabled = true)
+@Test(priority = 4,alwaysRun = true, enabled = true)
 public class TestCaseFoNIDBackUpload {
 
 

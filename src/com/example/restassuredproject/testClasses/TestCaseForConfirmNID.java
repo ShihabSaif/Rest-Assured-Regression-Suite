@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 3,alwaysRun = true, enabled = true)
+@Test(priority = 5,alwaysRun = true, enabled = true)
 public class TestCaseForConfirmNID {
     public static NIDBackUpload nidBackUpload=new NIDBackUpload();
     public static ConfirmNID confirmNID = new ConfirmNID();
