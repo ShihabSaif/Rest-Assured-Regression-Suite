@@ -5,13 +5,14 @@
 
         <classes>
 <!--            <class name="com.example.restassuredproject.testClasses.TestClassForLookUpWallet"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestClassForSignUp"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestClassForSignUp"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDClear"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>
-            <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>
-            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>
-            <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNIDFrontUpload"/>-->
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>-->
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>-->
+<!--            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>-->
+<!--            <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>-->
+            <class name="com.example.restassuredproject.testClasses.TestNPSBCredit"/>
         </classes>
     </test>
 </suite>
