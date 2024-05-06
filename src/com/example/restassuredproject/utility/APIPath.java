@@ -10,5 +10,5 @@ public class APIPath {
     public static final String nidFrontUpload = "http://10.9.0.41:8080/nobopay-api-gateway/api/v1/user/doc/nid-front";
     public static final String hostURLForNIDClear = "http://10.9.0.77:6060/tallypay-backdoor-service";
     public static final String bankConsumer = "http://10.9.0.77:6060/bank-consumer";
-
+    public static final String tallypay_to_fi_producer = "http://10.9.0.77:6060/tallypay-to-fi-producer/";
 }

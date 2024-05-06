@@ -12,9 +12,10 @@
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForRecharge"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForSendMoney"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForSendMoney"/>-->
+            <class name="com.example.restassuredproject.testClasses.TestCaseForCashOut"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestNPSBCredit"/>-->
         </classes>
     </test>
