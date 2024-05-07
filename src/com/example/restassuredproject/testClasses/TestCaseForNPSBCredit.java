@@ -1,7 +1,6 @@
 package com.example.restassuredproject.testClasses;
 
 import com.example.restassuredproject.features.NPSBCredit;
-import com.example.restassuredproject.features.SelfieUpload;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
@@ -13,13 +12,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 @Test(priority = 6,alwaysRun = true, enabled = true)
-public class TestNPSBCredit {
+public class TestCaseForNPSBCredit {
     public static User user = new User();
     public static NPSBCredit npsbCred = new NPSBCredit();
     UTIL util = new UTIL();
     Properties prop = util.readPropData();
 
-    public TestNPSBCredit() throws IOException {
+    public TestCaseForNPSBCredit() throws IOException {
     }
 
     public void TestCasesForNPSBCredit() throws IOException {

@@ -1,5 +1,6 @@
 package com.example.restassuredproject.features;
 
+import com.example.restassuredproject.DTO.AdditionalDataParams;
 import com.example.restassuredproject.DTO.NPSBCreditBodyParam;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestClassForSignUp;
@@ -25,7 +26,12 @@ public class NPSBCredit {
         npsb.setExternal_txn_id(npsb.getExternal_txn_id());
         npsb.setReceiver_wallet_no(npsb.getReceiver_wallet_no());
         npsb.setTrace_id(npsb.getTrace_id());
-        npsb.setAdditionalData(npsb.getAdditionalData());
+
+        AdditionalDataParams additionalData = new AdditionalDataParams();
+        additionalData.setStoreLabel(additionalData.getStoreLabel());
+        additionalData.setTerminalLabel(additionalData.getTerminalLabel());
+
+        npsb.setAdditionalData(additionalData);
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestClassForSignUp.token);

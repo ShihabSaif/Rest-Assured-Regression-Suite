@@ -11,7 +11,7 @@ public class NPSBCreditBodyParam {
     private String external_account_name;
     private String external_txn_id;
     private String external_FI;
-    private String amount;
+    private Double amount;
     private String trace_id;
     private AdditionalDataParams additionalData;
 
@@ -26,7 +26,7 @@ public class NPSBCreditBodyParam {
     String external_account_no_prop = prop.getProperty("external_account_no");
     String external_FI_prop = prop.getProperty("external_FI");
     String external_account_name_prop = prop.getProperty("external_account_name");
-    String amount_prop = prop.getProperty("amount");
+    Double amount_prop = Double.parseDouble(prop.getProperty("amount"));
     String trace_id_prop = prop.getProperty("trace_id");
 
     public String getReceiver_wallet_no() {
@@ -69,11 +69,11 @@ public class NPSBCreditBodyParam {
         this.external_FI = external_FI_prop;
     }
 
-    public String getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(Double amount) {
         this.amount = amount_prop;
     }
 
