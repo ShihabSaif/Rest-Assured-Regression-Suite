@@ -5,9 +5,12 @@ import com.example.restassuredproject.DTO.NPSBCreditBodyParam;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestClassForSignUp;
 import com.example.restassuredproject.utility.APIPath;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
@@ -35,6 +38,13 @@ public class NPSBCredit {
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestClassForSignUp.token);
+
+        // Convert the request body object to JSON
+        ObjectMapper objectMapper = new ObjectMapper();
+        String jsonBody = objectMapper.writeValueAsString(npsb);
+
+        // Print the JSON representation of the request body
+        System.out.println("Request Body: " + jsonBody);
 
         //response
         Response response = httpRequest

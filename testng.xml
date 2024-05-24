@@ -11,13 +11,15 @@
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseFoNIDBackUpload"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForConfirmNID"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCasesForSelfieUpload"/>-->
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForPinSet"/>-->
+            <class name="com.example.restassuredproject.testClasses.TestCaseForActiveUser"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForRecharge"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForSendMoney"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForCashOut"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForUserTypeUpdate"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForNPSBCredit"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNPSBCredit"/>-->
         </classes>
     </test>
 </suite>

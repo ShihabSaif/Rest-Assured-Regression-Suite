@@ -2,6 +2,7 @@ package com.example.restassuredproject.utility;
 
 public class APIPath {
 
+    public static final String tallyKhataUrlMain = "https://stgqa.tallykhata.com";
     public static final String hostURLMain = "https://stgnpapigw.nobopay.com";
     public static final String hostURL2 = "http://10.9.0.41:8080/nobopay-api-gateway/api/v1/user/signup/attempt";
     public static final String hostURL3 = "http://10.9.0.41:8080/npSpring_qa-";
