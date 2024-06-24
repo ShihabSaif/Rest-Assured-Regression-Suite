@@ -1,6 +1,8 @@
 package com.example.restassuredproject.testClasses;
 
-import com.example.restassuredproject.features.AttachBank;
+import com.example.restassuredproject.features.CashIn;
+import com.example.restassuredproject.features.NPSBCredit;
+import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -10,28 +12,29 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 9,alwaysRun = true, enabled = true)
-public class TestAttachBank {
-    public static AttachBank attachBank = new AttachBank();
+@Test(priority = 12,alwaysRun = true, enabled = true)
+public class TestCaseForCashIn {
+    public static User user = new User();
+    public static CashIn cashin = new CashIn();
     UTIL util = new UTIL();
     Properties prop = util.readPropData();
 
-    public TestAttachBank() throws IOException {
+    public TestCaseForCashIn() throws IOException {
     }
 
-    public void testAttachBank() throws IOException {
-        Response response=attachBank.attachBank();
+    public void TestCasesForCashIn() throws IOException {
+        Response response = cashin.CashIn(user);
         JsonPath jsonPathEvaluator = response.jsonPath();
         ResponseBody body = response.getBody();
         String bodyAsString = body.asString();
+
         jsonPathEvaluator.prettyPrint();
+//        System.out.println("name received from Response: " + customerNameEn1);
         System.out.println("Response Body is: " + body.asString());
 
         response
                 .then().log().all()
                 .assertThat()
                 .statusCode(200);
-        //.body(name,containsString("OTP"));
-        //Assert.assertEquals(name,ec_eng_name_prop);
     }
 }

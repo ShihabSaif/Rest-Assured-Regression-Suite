@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 6,alwaysRun = true, enabled = true)
+@Test(priority = 17,alwaysRun = true, enabled = true)
 public class TestCaseForNPSBCredit {
     public static User user = new User();
     public static NPSBCredit npsbCred = new NPSBCredit();

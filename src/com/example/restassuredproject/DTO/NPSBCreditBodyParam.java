@@ -13,7 +13,7 @@ public class NPSBCreditBodyParam {
     private String external_FI;
     private Double amount;
     private String trace_id;
-    private AdditionalDataParams additionalData;
+    private AdditionalDataParams additional_data_field;
 
     UTIL util=new UTIL();
     Properties prop = util.readPropData();
@@ -85,11 +85,11 @@ public class NPSBCreditBodyParam {
         this.trace_id = trace_id_prop;
     }
 
-    public AdditionalDataParams getAdditionalData() {
-        return additionalData;
+    public AdditionalDataParams getAdditional_data_field() {
+        return additional_data_field;
     }
 
-    public void setAdditionalData(AdditionalDataParams additionalData) {
-        this.additionalData = additionalData;
+    public void setAdditional_data_field(AdditionalDataParams additional_data_field) {
+        this.additional_data_field = additional_data_field;
     }
 }

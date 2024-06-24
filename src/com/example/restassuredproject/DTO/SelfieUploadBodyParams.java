@@ -38,7 +38,7 @@ public class SelfieUploadBodyParams {
     }
 
     public void setRequestId(String requestId) {
-        this.requestId = request_id_prop;
+        this.requestId = NIDFrontUploadBodyParams.reqID;
     }
 
     public String getNidNo() {

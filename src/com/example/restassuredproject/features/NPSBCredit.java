@@ -30,11 +30,11 @@ public class NPSBCredit {
         npsb.setReceiver_wallet_no(npsb.getReceiver_wallet_no());
         npsb.setTrace_id(npsb.getTrace_id());
 
-        AdditionalDataParams additionalData = new AdditionalDataParams();
-        additionalData.setStoreLabel(additionalData.getStoreLabel());
-        additionalData.setTerminalLabel(additionalData.getTerminalLabel());
+        AdditionalDataParams additional_data_field = new AdditionalDataParams();
+        additional_data_field.setStoreLabel(additional_data_field.getStoreLabel());
+        additional_data_field.setTerminalLabel(additional_data_field.getTerminalLabel());
 
-        npsb.setAdditionalData(additionalData);
+        npsb.setAdditional_data_field(additional_data_field);
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestClassForSignUp.token);

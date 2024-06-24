@@ -23,7 +23,7 @@ public class PinSet {
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON)
-                .headers("Authorization","Basic cHJvZ290aV9xYTpwcjBnMHQxQDIwMnR3bw==")
+                .headers("Authorization","Basic cHNsX3FhOnBzbHFhQDAwNyE=")
                 .headers("x-auth-token", "GyE7nOpiJMnIiTAFUIocjJ8tEpLLBMSyamKqlKx3")
                 .headers("x-device-id", "bd5b6dbd-f479-433e-8fb3-d4eda8fa5906")
                 .headers("x-user-mobile", pinsetBodyParam.getWallet_no());
@@ -33,7 +33,7 @@ public class PinSet {
                 .headers("Content-Type", "application/json")
                 .when()
                 .body(pinsetBodyParam)
-                .post("/wallet/api/tp-proxy/pin/set").prettyPeek().then().extract().response();
+                .put("/wallet/api/tp-proxy/pin/set").prettyPeek().then().extract().response();
 
         return response;
 

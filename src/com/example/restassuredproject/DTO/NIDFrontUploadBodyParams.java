@@ -34,7 +34,7 @@ public class NIDFrontUploadBodyParams {
     String nid_type_prop= prop.getProperty("nid_type_prop");
     String nid_pic_prop= prop.getProperty("nid_pic_prop");
     String tk_mobile_no = prop.getProperty("phn_number");
-    public static final String reqID = UTIL.generateRandomRequestId();
+    public static String reqID = UTIL.generateRandomRequestId();
 
     byte[] fileContent = FileUtils.readFileToByteArray(new File("nid_front_shihab.jpg"));
     String encodedString = Base64.getEncoder().encodeToString(fileContent);

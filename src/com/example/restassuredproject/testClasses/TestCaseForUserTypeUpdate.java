@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Test(priority = 12,alwaysRun = true, enabled = true)
+@Test(priority = 16,alwaysRun = true, enabled = true)
 public class TestCaseForUserTypeUpdate {
     public static User user = new User();
     public static UpdateUserType userUpdate = new UpdateUserType();

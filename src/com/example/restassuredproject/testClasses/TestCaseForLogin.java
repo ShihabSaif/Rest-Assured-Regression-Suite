@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
-@Test(priority = 8,alwaysRun = true, enabled = true)
+@Test(priority = 10,alwaysRun = true, enabled = true)
 public class TestCaseForLogin {
 
     public static User user = new User();

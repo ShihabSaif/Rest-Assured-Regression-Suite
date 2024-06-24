@@ -13,4 +13,5 @@ public class APIPath {
     public static final String bankConsumer = "http://10.9.0.77:6060/bank-consumer";
     public static final String tallypay_to_fi_producer = "http://10.9.0.77:6060/tallypay-to-fi-producer/";
     public static final String nobopay_backend = "http://10.9.0.77:6060/nobopay-backend/";
+    public static final String npapi = "http://10.9.0.77:7010/";
 }

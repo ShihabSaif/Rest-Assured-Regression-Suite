@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Test(priority = 9,alwaysRun = true, enabled = true)
+@Test(priority = 13,alwaysRun = true, enabled = true)
 public class TestCaseForRecharge {
     public static User user = new User();
     public static Recharge topup = new Recharge();

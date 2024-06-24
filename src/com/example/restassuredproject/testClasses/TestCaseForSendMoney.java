@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-@Test(priority = 10,alwaysRun = true, enabled = true)
+@Test(priority = 14,alwaysRun = true, enabled = true)
 public class TestCaseForSendMoney {
     public static User user = new User();
     public static SendMoney send = new SendMoney();
