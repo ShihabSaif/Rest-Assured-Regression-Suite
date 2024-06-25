@@ -14,6 +14,7 @@
             <class name="com.example.restassuredproject.testClasses.TestCaseForPinSet"/>
             <class name="com.example.restassuredproject.testClasses.TestAttachBank"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForActiveUser"/>
+            <class name="com.example.restassuredproject.testClasses.TestCaseForFoLogin"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForCashIn"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForRecharge"/>
