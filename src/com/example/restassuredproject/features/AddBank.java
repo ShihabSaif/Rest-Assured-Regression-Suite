@@ -1,9 +1,8 @@
 package com.example.restassuredproject.features;
 
-import com.example.restassuredproject.DTO.BankCashoutBodyParams;
+import com.example.restassuredproject.DTO.AddBankBodyParams;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestCaseForLogin;
-import com.example.restassuredproject.testClasses.TestClassForSignUp;
 import com.example.restassuredproject.utility.APIPath;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
@@ -13,25 +12,23 @@ import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
 
-public class BankCashout {
-    public Response bankCashout(User user) throws IOException {
+public class AddBank {
+    public Response addBank(User user) throws IOException {
         RestAssured.baseURI= APIPath.hostURLMain;
 
-        BankCashoutBodyParams bankCashout = new BankCashoutBodyParams();
-        bankCashout.setRouting_no(bankCashout.getRouting_no());
-        bankCashout.setAccount_no(bankCashout.getAccount_no());
-        bankCashout.setAmount(bankCashout.getAmount());
-        bankCashout.setBankCode(bankCashout.getBankCode());
-        bankCashout.setRequest_id(bankCashout.getRequest_id());
-        bankCashout.setCredential(bankCashout.getCredential());
-        bankCashout.setInstantTransfer(bankCashout.getInstantTransfer());
+        AddBankBodyParams addBank = new AddBankBodyParams();
+        addBank.setAccount_name(addBank.getAccount_name());
+        addBank.setBank_name(addBank.getBank_name());
+        addBank.setAccount_number(addBank.getAccount_number());
+        addBank.setRequest_id(addBank.getRequest_id());
+        addBank.setRouting_number(addBank.getRouting_number());
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestCaseForLogin.token);
 
         // Convert the request body object to JSON
         ObjectMapper objectMapper = new ObjectMapper();
-        String jsonBody = objectMapper.writeValueAsString(bankCashout);
+        String jsonBody = objectMapper.writeValueAsString(addBank);
 
         // Print the JSON representation of the request body
         System.out.println("Request Body: " + jsonBody);
@@ -40,9 +37,9 @@ public class BankCashout {
         Response response = httpRequest
                 .header("Content-Type", "application/json")
                 .when()
-                .body(bankCashout)
+                .body(addBank)
                 .header("Content-Type", "application/json")
-                .post("/api/v1/transaction/cash-out/bank").prettyPeek().then().extract().response();
+                .post("/api/v1/account/bank").prettyPeek().then().extract().response();
 
         return response;
     }

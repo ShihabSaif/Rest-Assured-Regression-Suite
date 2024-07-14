@@ -12,6 +12,7 @@ public class BankCashoutBodyParams {
     private String bankCode;
     private String instantTransfer;
     private String request_id;
+    private String credential;
 
     UTIL util=new UTIL();
     Properties prop = util.readPropData();
@@ -25,6 +26,15 @@ public class BankCashoutBodyParams {
     String amount_bank_cashout_prop = prop.getProperty("amount_bank_cashout_prop");
     String bankCode_prop = prop.getProperty("bankCode_prop");
     String instantTransfer_prop = prop.getProperty("instantTransfer_prop");
+    String credentials_prop = prop.getProperty("pin_prop");
+
+    public String getCredential() {
+        return credential;
+    }
+
+    public void setCredential(String credential) {
+        this.credential = credentials_prop;
+    }
 
     public String getRouting_no() {
         return routing_no;

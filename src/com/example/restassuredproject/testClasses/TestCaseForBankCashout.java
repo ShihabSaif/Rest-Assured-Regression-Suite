@@ -7,10 +7,12 @@ import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.Properties;
 
+@Test(priority = 19,alwaysRun = true, enabled = true)
 public class TestCaseForBankCashout {
     public static User user = new User();
     public static BankCashout bankCashout = new BankCashout();

@@ -1,19 +1,29 @@
 package com.example.restassuredproject.testClasses;
 
-import com.example.restassuredproject.features.WalletStatement;
+import com.example.restassuredproject.features.AddBank;
+import com.example.restassuredproject.features.BankCashout;
+import com.example.restassuredproject.model.User;
+import com.example.restassuredproject.utility.UTIL;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.Properties;
 
-@Test(priority = 20,alwaysRun = true, enabled = true)
-public class TestCaseForWalletStatement {
-    public static WalletStatement walletStmt = new WalletStatement();
+@Test(priority = 18,alwaysRun = true, enabled = true)
+public class TestCaseForAddbank {
+    public static User user = new User();
+    public static AddBank addBank = new AddBank();
+    UTIL util = new UTIL();
+    Properties prop = util.readPropData();
 
-    public void TestCasesForWalletStatement() throws IOException {
-        Response response = walletStmt.WalletStatement();
+    public TestCaseForAddbank() throws IOException {
+    }
+
+    public void TestCaseForAddbank() throws IOException {
+        Response response = addBank.addBank(user);
         JsonPath jsonPathEvaluator = response.jsonPath();
         ResponseBody body = response.getBody();
         String bodyAsString = body.asString();
