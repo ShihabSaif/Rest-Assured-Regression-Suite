@@ -16,7 +16,7 @@
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForActiveUser"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForFoLogin"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForInsertBizInfo"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForCashIn"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForRecharge"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForSendMoney"/>-->
@@ -24,7 +24,8 @@
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForNPSBCredit"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForAddbank"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForBankCashout"/>-->
-            <class name="com.example.restassuredproject.testClasses.TestCaseForVisaTransfer"/>
+<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForVisaTransfer"/>-->
+            <class name="com.example.restassuredproject.testClasses.TestCaseForAddMoneyNagad"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForWalletStatement"/>-->
         </classes>
     </test>
