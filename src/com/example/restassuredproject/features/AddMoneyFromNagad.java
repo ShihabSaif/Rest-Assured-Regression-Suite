@@ -61,7 +61,7 @@ public class AddMoneyFromNagad extends BasePage {
     public void giveNagadAccNo() throws InterruptedException, IOException, URISyntaxException {
 
         Thread.sleep(8000);
-        accNo1.sendKeys("01621215877");
+        accNo1.sendKeys(accNo);
 //        Thread.sleep(2000);
 
     }
@@ -98,7 +98,7 @@ public class AddMoneyFromNagad extends BasePage {
 
         Thread.sleep(10000);
         inputPin.sendKeys(nagadPin[0]);
-        Thread.sleep(6000);
+//        Thread.sleep(6000);
         confirmButton.click();
 
     }
