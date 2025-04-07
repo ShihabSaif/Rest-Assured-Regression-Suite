@@ -19,46 +19,44 @@ public class TestCaseForAddMoneyNagad {
     public void init() throws Exception {
         addMoneyFromNagad = new AddMoneyFromNagad();
     }
-    @Test(alwaysRun = true)
+    @Test(priority = 21)
     public void testNagadAddMoneyLauchBrowser() throws IOException, InterruptedException, URISyntaxException {
         addMoneyFromNagad.testLaunchBrowser();
     }
 
-    @Test
+    @Test(priority = 22)
     public void testNagadAddMoneyNameField() throws IOException, InterruptedException, URISyntaxException {
         addMoneyFromNagad.giveNagadAccNo();
     }
 
-    @Test
-    public void testNagadAddMoneyForwardButton() throws IOException, InterruptedException, URISyntaxException {
-        addMoneyFromNagad.clickForwardButton();
-    }
-//
-//    @Test(priority = 9,alwaysRun = true, groups = "AddMoneyFromNagad", dependsOnGroups = "Login")
+   @Test(priority = 23)
+   public void testNagadAddMoneyForwardButton() throws IOException, InterruptedException, URISyntaxException {
+       addMoneyFromNagad.clickForwardButton();
+   }
+
+//    @Test(priority = 24)
 //    public void testNagadAddMoneyOTP() throws IOException, InterruptedException, URISyntaxException {
 //        addMoneyFromNagad.giveOTP();
 //    }
-//
-//    @Test(priority = 10,alwaysRun = true, groups = "AddMoneyFromNagad", dependsOnGroups = "Login")
-//    public void testNagadAddMoneyOTPConfirmButton() throws IOException, InterruptedException, URISyntaxException {
-//        addMoneyFromNagad.clickOTPConfirmButton();
-//
-//
-//    }
-//    @Test(priority = 11,alwaysRun = true, groups = "AddMoneyFromNagad", dependsOnGroups = "Login")
-//    public void testNagadAddMoneyPINConfirmButton() throws IOException, InterruptedException, URISyntaxException {
-//        try{
-//            if((addMoneyFromNagad.confirmButton.isDisplayed())){
-//                Assert.assertTrue(true);
-//            }
-//            else
-//                Assert.fail();
-//        }catch (Exception e){
-//            Assert.fail();
-//        }
-//        addMoneyFromNagad.givePinConfirm();
-//
-//    }
+
+    @Test(priority = 25)
+    public void testNagadAddMoneyOTPConfirmButton() throws IOException, InterruptedException, URISyntaxException {
+        addMoneyFromNagad.clickOTPConfirmButton();
+    }
+    @Test(priority = 26)
+    public void testNagadAddMoneyPINConfirmButton() throws IOException, InterruptedException, URISyntaxException {
+        try{
+            if((addMoneyFromNagad.confirmButton.isDisplayed())){
+                Assert.assertTrue(true);
+            }
+            else
+                Assert.fail();
+        }catch (Exception e){
+            Assert.fail();
+        }
+        addMoneyFromNagad.givePinConfirm();
+
+    }
 //    @AfterMethod
 //    public void afterMethod(ITestResult result) {
 //        System.out.println("Executed method name:" + result.getMethod().getMethodName());
