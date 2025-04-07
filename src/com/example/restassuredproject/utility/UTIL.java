@@ -40,6 +40,13 @@ public class UTIL {
         String phoneNumber =FirstThrreeDigit+ RandomStringUtils.randomNumeric(5);
         return phoneNumber;
     }
+
+    public static String generateInvoiceNo(){
+        String FirstThrreeDigit="SQA-Sanity";
+        String phoneNumber =FirstThrreeDigit+ RandomStringUtils.randomNumeric(4);
+        return phoneNumber;
+    }
+
     public static String generateRandomRequestId(){
         String FirstThrreeDigit="tusi22";
         String phoneNumber =FirstThrreeDigit+ RandomStringUtils.randomNumeric(7);
