@@ -26,6 +26,7 @@
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForBankCashout"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForVisaTransfer"/>-->
             <class name="com.example.restassuredproject.testClasses.TestCaseForAddMoneyNagad"/>
+            <class name="com.example.restassuredproject.testClasses.TestCaseForNagadCreditCollection"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForWalletStatement"/>-->
         </classes>
     </test>
