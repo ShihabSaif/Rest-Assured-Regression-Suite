@@ -77,7 +77,7 @@ public class AddMoneyFromNagad extends BasePage {
     @Test(priority = 24)
     public void giveOTP() throws InterruptedException, IOException, URISyntaxException {
 
-        Thread.sleep(55000);
+        Thread.sleep(70000);
         Scanner scanner = new Scanner(System.in);
         System.out.print("give otp: ");
         String otp_input = scanner.nextLine();

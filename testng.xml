@@ -16,7 +16,7 @@
             <class name="com.example.restassuredproject.testClasses.TestCaseForActiveUser"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForFoLogin"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForInsertBizInfo"/>-->
-<!--            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>-->
+            <class name="com.example.restassuredproject.testClasses.TestCaseForLogin"/>
             <class name="com.example.restassuredproject.testClasses.TestCaseForCashIn"/>
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForRecharge"/>-->
 <!--            <class name="com.example.restassuredproject.testClasses.TestCaseForSendMoney"/>-->
