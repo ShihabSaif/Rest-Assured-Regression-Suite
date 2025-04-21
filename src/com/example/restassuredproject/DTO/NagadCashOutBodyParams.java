@@ -5,7 +5,7 @@ import com.example.restassuredproject.utility.UTIL;
 import java.io.IOException;
 import java.util.Properties;
 
-public class CashOutBodyParams {
+public class NagadCashOutBodyParams {
     private String fromAc ;
     private String amount;
     private String requestId;
@@ -25,7 +25,7 @@ public class CashOutBodyParams {
     String channel_prop = prop.getProperty("channel_prop");
 
 
-    public CashOutBodyParams() throws IOException {
+    public NagadCashOutBodyParams() throws IOException {
     }
 
     public String getFromAc() {

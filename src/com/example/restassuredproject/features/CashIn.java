@@ -1,7 +1,7 @@
 package com.example.restassuredproject.features;
 
 import com.example.restassuredproject.DTO.CashInBodyParams;
-import com.example.restassuredproject.DTO.CashOutBodyParams;
+import com.example.restassuredproject.DTO.NagadCashOutBodyParams;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestCaseForLogin;
 import com.example.restassuredproject.utility.APIPath;

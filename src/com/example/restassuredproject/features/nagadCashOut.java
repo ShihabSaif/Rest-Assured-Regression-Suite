@@ -1,7 +1,6 @@
 package com.example.restassuredproject.features;
 
-import com.example.restassuredproject.DTO.CashOutBodyParams;
-import com.example.restassuredproject.DTO.SendMoneyBodyParams;
+import com.example.restassuredproject.DTO.NagadCashOutBodyParams;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestCaseForLogin;
 import com.example.restassuredproject.utility.APIPath;
@@ -14,10 +13,10 @@ import io.restassured.specification.RequestSpecification;
 import java.io.IOException;
 import java.util.Properties;
 
-public class CashOut {
-    public Response cashOut(User user) throws IOException {
+public class nagadCashOut {
+    public Response nagadcashOut(User user) throws IOException {
         RestAssured.baseURI= APIPath.tallypay_to_fi_producer;
-        CashOutBodyParams cashout = new CashOutBodyParams();
+        NagadCashOutBodyParams cashout = new NagadCashOutBodyParams();
         cashout.setFromAc(cashout.getFromAc());
         cashout.setAmount(cashout.getAmount());
         cashout.setRequestId(cashout.getRequestId());

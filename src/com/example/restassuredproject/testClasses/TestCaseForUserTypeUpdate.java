@@ -1,6 +1,6 @@
 package com.example.restassuredproject.testClasses;
 
-import com.example.restassuredproject.features.CashOut;
+import com.example.restassuredproject.features.nagadCashOut;
 import com.example.restassuredproject.features.UpdateUserType;
 import com.example.restassuredproject.model.User;
 import io.restassured.path.json.JsonPath;
