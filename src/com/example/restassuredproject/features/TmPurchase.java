@@ -22,7 +22,7 @@ public class TmPurchase {
         tmpurchase.setCredential(tmpurchase.getCredential());
         tmpurchase.setNote(tmpurchase.getNote());
         tmpurchase.setExternalData(tmpurchase.getExternalData());
-        tmpurchase.setTm_purchase_amount(tmpurchase.getTm_purchase_amount());
+        tmpurchase.setAmount(tmpurchase.getAmount());
         tmpurchase.setOrderId(tmpurchase.getOrderId());
 
         //body declare

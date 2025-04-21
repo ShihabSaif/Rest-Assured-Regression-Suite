@@ -24,11 +24,11 @@ public class TmPurchaseBodyParams {
     String note_prop = prop.getProperty("note_prop");
     String orderId_prop = UTIL.generateRandomRequestId();
 
-    public String getTm_purchase_amount() {
+    public String getAmount() {
         return amount;
     }
 
-    public void setTm_purchase_amount(String tm_purchase_amount) {
+    public void setAmount(String amount) {
         this.amount = tm_purchase_amount_prop;
     }
 
