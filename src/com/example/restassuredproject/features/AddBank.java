@@ -4,6 +4,7 @@ import com.example.restassuredproject.DTO.AddBankBodyParams;
 import com.example.restassuredproject.model.User;
 import com.example.restassuredproject.testClasses.TestCaseForLogin;
 import com.example.restassuredproject.utility.APIPath;
+import com.example.restassuredproject.utility.UTIL;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -11,17 +12,18 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
+import java.util.Properties;
 
 public class AddBank {
-    public Response addBank(User user) throws IOException {
+    public Response addBank(User user, String accountName, String accountNumber, String bankName, String routingNumber) throws IOException {
         RestAssured.baseURI= APIPath.hostURLMain;
 
-        AddBankBodyParams addBank = new AddBankBodyParams();
-        addBank.setAccount_name(addBank.getAccount_name());
-        addBank.setBank_name(addBank.getBank_name());
-        addBank.setAccount_number(addBank.getAccount_number());
-        addBank.setRequest_id(addBank.getRequest_id());
-        addBank.setRouting_number(addBank.getRouting_number());
+        AddBankBodyParams addBank = new AddBankBodyParams(accountName, accountNumber, bankName, routingNumber);
+
+        //Read data from property file
+        UTIL util=new UTIL();
+        Properties prop = util.readPropData();
+        String auth_token= TestCaseForLogin.token;
 
         //body declare
         RequestSpecification httpRequest =RestAssured.given().contentType(ContentType.JSON).headers("Authorization","token " + TestCaseForLogin.token);
