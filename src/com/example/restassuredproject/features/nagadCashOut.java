@@ -14,15 +14,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class nagadCashOut {
-    public Response nagadcashOut(User user) throws IOException {
+    public Response nagadcashOut(User user, String financialInstitute, String toAc) throws IOException {
         RestAssured.baseURI= APIPath.tallypay_to_fi_producer;
-        NagadCashOutBodyParams cashout = new NagadCashOutBodyParams();
-        cashout.setFromAc(cashout.getFromAc());
-        cashout.setAmount(cashout.getAmount());
-        cashout.setRequestId(cashout.getRequestId());
-        cashout.setFinancialInstitute(cashout.getFinancialInstitute());
-        cashout.setToAc(cashout.getToAc());
-        cashout.setChannel(cashout.getChannel());
+        NagadCashOutBodyParams cashout = new NagadCashOutBodyParams(financialInstitute, toAc);
 
         //Read data from property file
         UTIL util=new UTIL();
