@@ -16,13 +16,13 @@ public class BankCashoutBodyParams {
 
 
 
-    public BankCashoutBodyParams(String routing_no, String account_no, String bankCode, String instantTransfer) throws IOException {
+    public BankCashoutBodyParams(String routing_no, String account_no, String bankCode, String instantTransfer, String amount) throws IOException {
         UTIL util=new UTIL();
         Properties prop = util.readPropData();
 
         this.routing_no = routing_no;
         this.account_no = account_no;
-        this.amount = prop.getProperty("amount_bank_cashout_prop");
+        this.amount = amount;
         this.bankCode = bankCode;
         this.instantTransfer = instantTransfer;
         this.request_id = UTIL.generateRandomRequestId();
